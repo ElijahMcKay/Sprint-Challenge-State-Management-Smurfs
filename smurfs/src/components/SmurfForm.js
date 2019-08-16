@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Smurf from './Smurf'; 
 
 function SmurfForm(props) {
-    console.log(props.smurfs); 
+
     const [ state, setState ] = useState({
         name: '',
         age: '',
@@ -20,6 +20,7 @@ function SmurfForm(props) {
     const handleChange = (e) => {
        setState({...state, [e.target.name]: e.target.value});
     }
+    console.log(props.smurfs)
     return (
         <>
             <form onSubmit={handleSubmit}>
@@ -48,7 +49,7 @@ function SmurfForm(props) {
             </form>
             {/* <Smurf smurfs={state}/> */}
             {props.smurfs.map((smurf) => (
-                <Smurf smurfs={state}/>
+                <Smurf smurfs={smurf}/>
             ))}
         </>
     )

@@ -11,7 +11,8 @@ function App(props) {
     <div className="App">
       <h1>SMURFS! 2.0 W/ Redux</h1>
       <SmurfForm />
-      <button onClick={props.getData}>Get Existing Smurfs</button>
+      <h2>Members of the Village</h2>
+      <button onClick={props.getData}>Load Members</button>
     </div>
   );
 }

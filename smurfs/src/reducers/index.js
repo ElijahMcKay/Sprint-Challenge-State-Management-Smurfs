@@ -20,7 +20,7 @@ export const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 isLoading: false,
-                films: action.payload,
+                smurfs: action.payload
             }
         case FETCH_SMURFS_FAILURE: 
             return {
@@ -38,7 +38,7 @@ export const reducer = (state = initialState, action) => {
                 return {
                     ...state,
                     isLoading: false,
-                    films: action.payload,
+                    smurfs: action.payload
                 }
             case POST_SMURFS_FAILURE: 
                 return {
