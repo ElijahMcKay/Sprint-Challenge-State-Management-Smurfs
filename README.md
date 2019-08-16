@@ -32,7 +32,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
       App state is when you have data that is going to have to be used in other parts of the App, so you need to use ways to pass down props to every necessary component
-      Component state is when you need to keep track of state like in a form, but none of that other data necessarily needs to be used by other components.  
+      Component state is when you need to keep tr ack of state like in a form, but none of that other data necessarily needs to be used by other components.  
 
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
       redux thunk gives us the ability to turn our action creator into a thunk, aka. a function that returns another function call.  
